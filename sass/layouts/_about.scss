@@ -1,19 +1,6 @@
 .about {
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
+  display: none;
 
-  // breakpoint mobile
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
-
-  // breakpoint tablet
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-
-  // breakpoint desktop
   @media screen and (min-width: 1200px) {
     padding-top: 0;
     display: flex;

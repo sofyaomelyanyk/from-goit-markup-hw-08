@@ -122,14 +122,9 @@ address {
 }
 
 .container {
-  width: 100%;
+  width: 480px;
   margin: 0 auto;
   padding: 0 15px;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -657,47 +652,19 @@ address {
   color: var(--primary-white-color);
 }
 
-@media screen and (min-width: 480px) {
-  .features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-@media screen and (min-width: 768px) {
-  .features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-@media screen and (min-width: 480px) {
-  .features__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .features__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-  }
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 @media screen and (min-width: 1200px) {
   .features__list {
@@ -708,10 +675,8 @@ address {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .features__item {
-    width: 450px;
-  }
+.features__item {
+  width: 450px;
 }
 @media screen and (min-width: 768px) {
   .features__item {
@@ -754,20 +719,8 @@ address {
   line-height: 1.7;
 }
 
-@media screen and (max-width: 480px) {
-  .about {
-    display: none;
-  }
-}
-@media screen and (min-width: 480px) {
-  .about {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .about {
-    display: none;
-  }
+.about {
+  display: none;
 }
 @media screen and (min-width: 1200px) {
   .about {
