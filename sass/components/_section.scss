@@ -1,29 +1,13 @@
 .section {
-   
+  padding-bottom: 60px;
+  padding-top: 60px;
 
-   // breakpoint mobile
-   @media screen and (min-width: 480px) {
-      padding-bottom: 60px;
-      padding-top: 60px;
-      }
-   
-      // breakpoint tablet
-      @media screen and (min-width: 738px) {
-         padding-bottom: 60px;
-         padding-top: 60px;
-      }
-   
-      // breakpoint desktop
-      @media screen and (min-width: 1200px) {
-      padding-bottom: 94px;
-      padding-top: 94px;
-      }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
 
-
-
- }
-
-
- .section--bgc {
-   background-color: var(--background-color);
- }
+.section--bgc {
+  background-color: var(--background-color);
+}
