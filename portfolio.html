@@ -21,17 +21,13 @@
 
   <!--HEADER-->
 
-  <!-- <header class="header">
-   <div class="container header-container"> -->
-     <!--navigation-->
-
-     <!-- <nav class="nav">
-       
-
+  <header class="header">
+   <div class="container header-container">
+     <nav class="nav">
        <a href="" class="logo header__logo link">
          <span class="logo__first-word">Web</span>Studio
        </a>
-
+       
        <ul class="nav__list list">
          <li class="nav__item">
            <a href="./index.html" class="link nav__link ">Студия</a>
@@ -43,10 +39,83 @@
            <a href="" class="link nav__link">Контакты</a>
          </li>
        </ul>
-     </nav> -->
+     </nav>
+
+     <button
+          
+          class="mobile-menu__button"
+          type="button"
+          aria-label="menu button"
+          data-menu-button
+        >
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use
+              class="mobile-menu__open"
+              href="./images/icon-svg/icons.svg#icon-menu-mobile"
+            ></use>
+            <use
+              class="mobile-menu__close"
+              href="./images/icon-svg/icons.svg#icon-close-mobile"
+            ></use>
+          </svg>
+        </button>
+        <div class="backdrop is-hidden" data-menu >
+          <div class="menu">
+            <ul class="menu__list list">
+              <li class="menu__item">
+                <a href="./index.html" class="link ">Студия</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="link menu-link--current">Портфолио</a>
+              </li>
+              <li class="menu__item"><a href="" class="link">Контакты</a></li>
+            </ul>
+            <ul class="menu-contacts__list list">
+              <li class="menu-contacts__tel">
+                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              </li>
+              <li class="menu-contacts__email">
+                <a href="mailto:info@devstudio.com" class="link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="menu-social__list list">
+              <li class="menu-social__item">
+                <a href="" class="link" aria-label="Ссылка на Instagram"
+                  >Instagram</a
+                >
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="link" aria-label="Ссылка на Twitter"
+                  >Twitter</a
+                >
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="link" aria-label="Ссылка на Facebook"
+                  >Facebook</a
+                >
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="link" aria-label="Ссылка на LinkedIn"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+     
+
+     
+
+
+
+
+
+
      <!--contacts-->
 
-     <!-- <ul class="header-contacts header-contacts__list list">
+     <ul class="header-contacts header-contacts__list list">
        <li class="header-contacts__item item">
          <a
            href="mailto:info@devstudio.com"
@@ -70,7 +139,7 @@
        </li>
      </ul>
    </div>
- </header> -->
+ </header>
 
     <!-- Main -->
 
@@ -408,7 +477,10 @@
         </form>
       </div>
     </footer>
-
+    
+   
     <script src="./js/form.js"></script>
+    
+    <script src="./js/menu-button.js"></script>
   </body>
 </html>

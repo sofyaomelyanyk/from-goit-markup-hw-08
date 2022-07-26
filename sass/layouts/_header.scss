@@ -1,55 +1,81 @@
 .header {
-   border-bottom: 1px solid var(--border-color-header);
- }
- 
- .header-container {
-   display: flex;
-   align-items: center;
- }
+  border-bottom: 1px solid var(--border-color-header);
+}
 
- .header__logo {
-   margin-right: 93px;
-   color: var(--color-logo);
- }
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
- .header-contacts {
-   font-weight: 500;
-   line-height: 1.14;
-   letter-spacing: 0.02em;
- }
- 
- .header-contacts__list {
-   display: flex;
-   align-items: center;
-   gap: 30px;
- 
-   margin-left: auto;
- }
- 
- .header-contacts__item {
-   display: flex;
-   align-items: center;
- 
-   color: rgba(117, 117, 117, 1);
+.header__logo {
+  color: var(--color-logo);
 
-   &:hover,
-   &:focus {
-   color: var(--accent-color);
-   }
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
 
- }
- 
- .header-contacts__link {
-   display: inline-flex;
-   align-items: center;
-   gap: 10px;
-   padding-top: 32px;
-   padding-bottom: 32px;
- 
-   transition: color 250ms var(--animation-timing-function);
- }
- 
- 
- .header-contacts__icon {
-   fill: currentColor;
- }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.header-contacts {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-contacts__list {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    margin-left: auto;
+  }
+}
+
+.header-contacts__item {
+  display: flex;
+  align-items: center;
+
+  color: rgba(117, 117, 117, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-contacts__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: color 250ms var(--animation-timing-function);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.header-contacts__icon {
+  fill: currentColor;
+}
