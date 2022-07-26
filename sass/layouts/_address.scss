@@ -1,3 +1,32 @@
+.footer-address{
+   
+
+   @media screen and (min-width:480px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 0;
+     padding-bottom: 60px;
+     
+   }
+
+   @media screen and (min-width:738px) {
+     display: inline-flex;
+      padding: 0 82px 60px 79px;
+     
+   }
+
+   @media screen and (min-width:1200px) {
+      display: inline-flex;
+      justify-content: start;
+      align-items: flex-start;
+
+      padding: 0 70px 0 0;
+     
+     
+   }
+}
+
 .address {
    display: flex;
    flex-direction: column;
@@ -11,6 +40,19 @@
  
  .address__list {
    display: block;
+
+
+   @media screen and (min-width:480px) {
+      text-align: center;
+   }
+
+   @media screen and (min-width:738px) {
+      text-align: center;
+   }
+
+   @media screen and (min-width:1200px) {
+      text-align: start;;
+   }
  }
  
  .address__item:not(:last-child) {
@@ -22,4 +64,3 @@
    font-style: normal;
    line-height: 1.7;
  }
- 

@@ -1,5 +1,26 @@
 .about {
-   padding-top: 0;
+  
+     @media screen and (max-width: 480px) {
+     display: none;
+     }
+
+     // breakpoint mobile
+      @media screen and (min-width: 480px) {
+      display: none;
+      }
+   
+      // breakpoint tablet
+      @media screen and (min-width: 738px) {
+         display: none;
+      }
+   
+      // breakpoint desktop
+      @media screen and (min-width: 1200px) {
+         padding-top: 0;
+         display: flex;
+      }
+
+   
  }
  
  .about__list {

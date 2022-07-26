@@ -4,11 +4,26 @@
    left: 50%;
    transform: translate(-50%, -50%);
  
-   width: 528px;
-   height: 581px;
+   
    padding: 40px;
  
    background-color: var(--primary-white-color);
+
+
+   @media screen and (min-width:480px) {
+      width: 450px;
+   height: 609px;
+   }
+
+   @media screen and (min-width:738px) {
+      width: 450px;
+      height: 609px;
+   }
+
+   @media screen and (min-width:1200px) {
+      width: 528px;
+   height: 581px;
+   }
  }
  
  .button-close {
@@ -46,6 +61,8 @@
  }
  
  .modal__title {
+   display: block;
+   text-align: center;
    font-size: 20px;
    line-height: 1.15;
  }

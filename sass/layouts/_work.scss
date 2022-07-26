@@ -1,8 +1,28 @@
 .button__list {
-   display: flex;
-   justify-content: center;
-   margin-bottom: 50px;
-   gap: 8px;
+   
+   @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 40px;
+      }
+   
+      // breakpoint tablet
+      @media screen and (min-width: 738px) {
+         display: flex;
+         gap: 8px;
+         justify-content: center;
+         margin-bottom: 30px;
+      }
+   
+      // breakpoint desktop
+      @media screen and (min-width: 1200px) {
+         display: flex;
+         gap: 8px;
+         justify-content: center;
+         margin-bottom: 50px;
+      }
+
  }
  
  .work-button{
@@ -26,13 +46,29 @@
  }
  
  .work__item {
-   width: calc((100% - 60px) / 3);
+   
  
    background-color: var(--primary-white-color);
    border: 1px solid var(--border-color);
  
    transition: background-color 250ms var(--animation-timing-function),
      border 250ms var(--animation-timing-function);
+
+     @media screen and (min-width: 480px) {
+      width: 100%;
+      }
+   
+      // breakpoint tablet
+      @media screen and (min-width: 738px) {
+         width: calc((100% - 30px) / 2);
+      }
+   
+      // breakpoint desktop
+      @media screen and (min-width: 1200px) {
+         width: calc((100% - 60px) / 3);
+      }
+
+
  }
  
  .work__item:hover,

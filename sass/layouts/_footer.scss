@@ -1,18 +1,19 @@
+
 .footer {
    padding-top: 60px;
    padding-bottom: 60px;
+   
  }
+
  
  .footer__item {
    display: inline-flex;
    flex-direction: column;
-   margin-right: 70px;
-
-   &--margin {
-      margin-right: 93px;
-    }
 
  }
+
+ 
+
  
  .footer__logo {
    display: block;
@@ -22,6 +23,7 @@
    font-family: Raleway, sans-serif;
    font-size: 26px;
    line-height: 1.19;
+   
  }
 
  
@@ -35,4 +37,28 @@
    text-transform: uppercase;
  
    color: var(--primary-white-color);
+ }
+
+ .footer-join {
+  
+
+   @media screen and (min-width:480px) {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+   padding-bottom: 60px;
+   }
+
+   @media screen and (min-width:738px) {
+      display: inline-flex;
+      padding: 0 82px 60px 89px;
+   }
+
+   @media screen and (min-width:1200px) {
+      display: inline-flex;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 0 93px 0 0;
+   }
  }
