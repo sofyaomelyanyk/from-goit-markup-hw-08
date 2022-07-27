@@ -5,16 +5,11 @@
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    gap: 8px;
     justify-content: center;
     margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
     margin-bottom: 50px;
   }
 }
@@ -40,19 +35,20 @@
 }
 
 .work__item {
-  width: 100%;
   background-color: var(--primary-white-color);
   border: 1px solid var(--border-color);
 
   transition: background-color 250ms var(--animation-timing-function),
     border 250ms var(--animation-timing-function);
 
+  flex-basis: calc((100% - 0px) / 1);
+
   @media screen and (min-width: 768px) {
-    width: calc((100% - 30px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 
