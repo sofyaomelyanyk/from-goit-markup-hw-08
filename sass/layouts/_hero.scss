@@ -22,32 +22,32 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  background-image: url(../../images/images-page1/hero_sm.jpg);
+  background-image: url(../images/images-page1/hero_sm.jpg);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../images/images-page1/hero_sm@2x.jpg);
+    background-image: url(../images/images-page1/hero_sm@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../../images/images-page1/hero_md.jpg);
+    background-image: url(../images/images-page1/hero_md.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../../images/images-page1/hero_md@2x.jpg);
+      background-image: url(../images/images-page1/hero_md@2x.jpg);
     }
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../../images/images-page1/hero_lg.jpg);
+    background-image: url(../images/images-page1/hero_lg.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../../images/images-page1/hero_lg@2x.jpg);
+      background-image: url(../images/images-page1/hero_lg@2x.jpg);
     }
   }
 }
