@@ -43,11 +43,12 @@
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: url(../../images/images-page1/hero_lg.jpg);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../../images/images-page1/hero_lg@2x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../images/images-page1/hero_lg@2x.jpg);
+    }
   }
 }
 
