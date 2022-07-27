@@ -510,7 +510,7 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 480px;
+  max-width: 100%;
   height: 100%;
   padding: 48px 40px;
   background-color: var(--primary-white-color);
